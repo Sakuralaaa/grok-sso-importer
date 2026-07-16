@@ -20,7 +20,7 @@ func handleMethod(method string, request []byte) ([]byte, error) {
 			SchemaVersion: schemaVersion,
 			Metadata: metadata{
 				Name: pluginName, Version: pluginVersion, Author: "Sakuralaaa",
-				GitHubRepository: "", ConfigFields: []interface{}{},
+				GitHubRepository: "https://github.com/Sakuralaaa/grok-sso-importer", ConfigFields: []interface{}{},
 			},
 			Capabilities: registrationCapabilities{ManagementAPI: true},
 		})

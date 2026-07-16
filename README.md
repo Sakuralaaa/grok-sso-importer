@@ -21,7 +21,11 @@ email@example.com----password----<sso-token-3>
 
 ## Install
 
-After this project is pushed to its own GitHub repository and a release is published, add its `registry.json` raw URL to CPA plugin store sources and install it from the web management panel.
+Add this URL to CPA plugin store sources and install it from the web management panel:
+
+```text
+https://raw.githubusercontent.com/Sakuralaaa/grok-sso-importer/main/registry.json
+```
 
 ## Notes
 
