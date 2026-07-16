@@ -9,7 +9,7 @@ import (
 
 const (
 	pluginName            = "grok-sso-importer"
-	pluginVersion         = "0.1.2"
+	pluginVersion         = "0.1.3"
 	managementRoutePrefix = "/plugins/" + pluginName
 )
 

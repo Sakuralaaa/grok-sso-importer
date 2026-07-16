@@ -6,7 +6,7 @@
       "name": "Grok SSO Importer",
       "description": "Convert Grok SSO cookies into CPA xAI OAuth credentials and import them into the auth pool.",
       "author": "Sakuralaaa",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "repository": "https://github.com/Sakuralaaa/grok-sso-importer",
       "homepage": "https://github.com/Sakuralaaa/grok-sso-importer",
       "license": "MIT",
