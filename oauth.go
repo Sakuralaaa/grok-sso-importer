@@ -225,11 +225,11 @@ func credentialFromToken(token oauthToken) (map[string]any, string, string, stri
 	fileKey := firstNonEmpty(email, subject, strconv.FormatInt(now.UnixNano(), 10))
 	fileName := "xai-" + sanitizeFilePart(fileKey) + ".json"
 	credential := map[string]any{
-		"type": "xai", "auth_kind": "oauth", "using_api": true,
+		"type": "xai", "auth_kind": "oauth",
 		"access_token": token.AccessToken, "refresh_token": token.RefreshToken, "id_token": token.IDToken,
 		"token_type": firstNonEmpty(token.TokenType, "Bearer"), "expires_in": token.ExpiresIn,
 		"expired": expires.Format(time.RFC3339), "last_refresh": now.Format(time.RFC3339),
-		"base_url": "https://api.x.ai/v1", "token_endpoint": tokenURL, "disabled": false,
+		"base_url": "https://cli-chat-proxy.grok.com/v1", "token_endpoint": tokenURL, "disabled": false,
 		"headers": map[string]string{
 			"X-XAI-Token-Auth": "xai-grok-cli", "x-grok-client-version": "0.2.93",
 			"x-grok-client-identifier": "grok-shell", "User-Agent": "grok-shell/0.2.93 (linux; x86_64)",

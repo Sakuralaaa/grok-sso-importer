@@ -8,7 +8,8 @@ Native CLIProxyAPI plugin that converts x.ai/Grok SSO cookies through the offici
 - Upload a TXT file; the browser reads it locally and fills the same import box.
 - Accepts either raw SSO lines or `email----password----sso` lines.
 - Uses a Chrome TLS fingerprint for the x.ai verification flow.
-- Saves CPA-compatible `type: xai`, `auth_kind: oauth`, `using_api: true` credentials through `host.auth.save`.
+- Saves CPA-compatible `type: xai`, `auth_kind: oauth` credentials through `host.auth.save`.
+- Uses `https://cli-chat-proxy.grok.com/v1` as the default `base_url` and does not add `using_api`.
 - Does not return SSO values or OAuth tokens in status responses.
 
 ## Input
